@@ -24,8 +24,15 @@ class Settings(BaseSettings):
 
     class Config:
         env_file = ".env"
-        env_file_coding = "utf-8"
+        env_file_encoding = "utf-8"
         case_sensitive = False
+
+    @property
+    def db_dsn(self) -> str:
+        return (
+            f"postgresql://{self.db_user}:{self.db_password}"
+            f"@{self.db_host}:{self.db_port}/{self.db_name}"
+        )
 
 settings = Settings()
 
