@@ -1,2 +1,2 @@
 # crypto-realtime-monitoring
-Sistema de monitoreo de precios de criptomonedas en tiempo real usando Kafka, PostgreSQL y FastAPI.
+Real‑time Crypto Data Platform: streaming + storage + analytics + API
