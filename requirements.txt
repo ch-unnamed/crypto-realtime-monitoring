@@ -7,3 +7,8 @@ python-dotenv
 pydantic
 pydantic-settings
 kafka-python
+
+SQLAlchemy 
+pandas
+matplotlib
+seaborn
